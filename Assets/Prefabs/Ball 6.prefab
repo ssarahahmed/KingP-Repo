@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7999611190917697222, guid: 4d98d23be3e1c499bb0af5b6cac965de, type: 3}
+      propertyPath: m_Radius
+      value: 4.263375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7999611190917697222, guid: 4d98d23be3e1c499bb0af5b6cac965de, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.021217803
+      objectReference: {fileID: 0}
     - target: {fileID: 8704889872046460177, guid: 4d98d23be3e1c499bb0af5b6cac965de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
