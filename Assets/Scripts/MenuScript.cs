@@ -1,7 +1,25 @@
 using UnityEngine;
+using System.Collections;
 
-public class NewMonoBehaviourScript1 : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
+
+     public void gotoGame() {
+        StartCoroutine(WaitForSoundTransition("MainGame"));
+        AudioSource source = GetComponent<AudioSource>();
+        source.Play();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
+    }
+
+    private IEnumerator WaitForSoundTransition(string sceneName){
+        AudioSource audioSource = GetComponentInChildren<AudioSource>();
+        audioSource.Play(); //Play the Sound
+        yield return new WaitForSeconds(audioSource.clip.length); 
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
+
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

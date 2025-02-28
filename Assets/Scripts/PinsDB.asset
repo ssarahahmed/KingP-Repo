@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962e61d88dc8946af8306377b7e90d50, type: 3}
+  m_Name: PinsDB
+  m_EditorClassIdentifier: 
+  pins:
+  - prefab: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
+    name: OGPin
+  - prefab: {fileID: 5372668941899559727, guid: 79c759170fcc74470b87c3feb4d721db, type: 3}
+    name: Horus
+  - prefab: {fileID: 1066751224549895077, guid: 0663ad752bebc43f3bad808fb88cbffa, type: 3}
+    name: Cardinal
+  - prefab: {fileID: 4251680548070643432, guid: f456a3d4fc30a462b9548a5e0371af02, type: 3}
+    name: Chef
+  - prefab: {fileID: 8669358281294102737, guid: 114f8530abc0345bb9dc76b258963163, type: 3}
+    name: Chocolate
+  - prefab: {fileID: 4939506074799537584, guid: eff85a21bbc454a579693ddf1a0c0fdf, type: 3}
+    name: Cyber
+  - prefab: {fileID: 5687356044124321942, guid: 7d1e97a94bc39459abcc127689f8b6af, type: 3}
+    name: Doggo
+  - prefab: {fileID: 6232744774912480404, guid: e30b0bd2f1e6c4df5a6a77852b1073c0, type: 3}
+    name: Greeny

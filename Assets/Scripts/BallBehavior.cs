@@ -24,12 +24,10 @@ public class BallBehavior : MonoBehaviour
 
     public int secondsToMaxSpeed;
 
-public void InitialPosition(){
-    body = GetComponent<Rigidbody2D>();
-    body.position = GetRandomPosition();
+public void initialPosition(){
+    transform.position = GetRandomPosition();
     targetPosition = GetRandomPosition();
     launching = false;
-    rerouting = false;
 }
 public void Reroute(Collision2D collision) {
     GameObject otherBall = collision.gameObject;
@@ -53,6 +51,7 @@ public void Reroute(Collision2D collision) {
        // {
       //      launching = true; // Start following the pin immediately
        // }
+       initialPosition();
        targetPosition = GetRandomPosition();
     }
 
@@ -151,6 +150,16 @@ public void Reroute(Collision2D collision) {
             if(collided == "Pin") {
                 Reroute(collision);
             }
+        }
+
+        public void setBounds(float miX, float maX, float miY, float maY) {
+            minX = miX;
+            maxX = maX;
+            minY = miY;
+            maxY = maY;
+        }
+        public void setTarget(GameObject pin) {
+            target = pin;
         }
 }
 

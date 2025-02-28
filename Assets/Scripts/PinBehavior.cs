@@ -27,6 +27,13 @@ public class PinBehavior : MonoBehaviour
     
     }
     }
+    private void OnCollisionEnter2D(Collision2D collision) {
+        string collided = collision.gameObject.tag;
+        Debug.Log("Collided with " + collided);
+        if (collided == "Ball" || collided == "Wall") {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        }
+    }
 
     // Update is called once per frame
     void Update()
