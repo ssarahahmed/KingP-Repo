@@ -133,11 +133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8343877006118787033, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.65254873
+      value: -3.67
       objectReference: {fileID: 0}
     - target: {fileID: 8343877006118787033, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1541711
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8343877006118787033, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1231,8 +1231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballVariants:
-  - {fileID: 7260231963364139304, guid: 211a60fbf3c104f74b2c9b77c11e6aa8, type: 3}
   - {fileID: 7855117256199873389, guid: 4d98d23be3e1c499bb0af5b6cac965de, type: 3}
+  - {fileID: 7260231963364139304, guid: 211a60fbf3c104f74b2c9b77c11e6aa8, type: 3}
   - {fileID: 3718446740800248341, guid: 2d37f9723542d461fb8e5210d55906d3, type: 3}
   - {fileID: 7028724583125813585, guid: 5d0da008d859c4b828edc634cc3dd903, type: 3}
   - {fileID: 7959090702776110836, guid: 23ecb8a64bca442d1af9f3756c6f7078, type: 3}
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   - {fileID: 2647109232688554773, guid: 65978e218f039414bbbae38d387d31af, type: 3}
   - {fileID: 1436592980678774658, guid: 4377e17aed4a84f6bbafde9c727f554a, type: 3}
   - {fileID: 5245645234227417405, guid: 2357f0753cfe642d1b1d81e53e92a223, type: 3}
-  targetObject: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
+  targetObject: {fileID: 597002210}
   startTime: 0
   spawnRatio: 6
   minX: -8.15
@@ -1250,6 +1250,7 @@ MonoBehaviour:
   maxY: 4.33
   minSpawn: 0
   maxSpawn: 0
+  maxBalls: 2
 --- !u!1 &538659500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,8 +2291,8 @@ Transform:
   m_GameObject: {fileID: 2129430593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46, y: 0.11, z: 0}
-  m_LocalScale: {x: 1.471119, y: 1.0284, z: 1}
+  m_LocalPosition: {x: 1.17, y: -0.25, z: 0}
+  m_LocalScale: {x: 2.7408073, y: 1.599866, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 242374106}

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rerouting: 0
-  minX: 0
+  minX: -8.15
   minY: 0
   maxX: 0
   maxY: 0
