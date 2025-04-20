@@ -17,6 +17,7 @@ public class SpawningBehavior : MonoBehaviour
     public float maxSpawn;
 
     public int maxBalls = 2;
+    public Pins pinsDB;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,6 +39,7 @@ public class SpawningBehavior : MonoBehaviour
     void Start()
     {
         spawnBall();
+        spawnPin();
 
     }
 
@@ -49,6 +51,11 @@ public class SpawningBehavior : MonoBehaviour
         {
             spawnBall();
         }
+    }
+
+    void spawnPin()
+    {
+        targetObject = Instantiate(pinsDB.getPin(CharacterManager.selection).prefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
     }
 }
 

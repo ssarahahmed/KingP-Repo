@@ -927,6 +927,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7343839245432078504}
+    - targetCorrespondingSourceObject: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4507965793193700336}
   m_SourcePrefab: {fileID: 100100000, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
 --- !u!1 &5372668941899559727 stripped
 GameObject:
@@ -960,3 +963,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4507965793193700336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372668941899559727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c81fa24da674875bb6c38a7e08b195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  speed: 0
+  baseSpeed: 2
+  dashSpeed: 8
+  dashDuration: 0.3
+  dashing: 0
+  newPosition: {x: 0, y: 0}
+  mousePosG: {x: 0, y: 0, z: 0}
+  cooldownRate: 1
+  endLastDash: 0
+  cooldown: 0

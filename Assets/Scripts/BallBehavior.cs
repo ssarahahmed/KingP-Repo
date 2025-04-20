@@ -150,6 +150,7 @@ public void Reroute(Collision2D collision) {
             if(collided == "Pin") {
                 Reroute(collision);
             }
+        Debug.Log(this + "Collided with: " + collision.gameObject.name);
         }
 
         public void setBounds(float miX, float maX, float miY, float maY) {

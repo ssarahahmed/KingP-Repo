@@ -168,6 +168,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7202121743341662251}
+    - targetCorrespondingSourceObject: {fileID: 9101169217230431019, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7226645953024122173}
   m_SourcePrefab: {fileID: 100100000, guid: 9f880f108123e47cab8aaf7aa18dbf56, type: 3}
 --- !u!1 &4251680548070643432 stripped
 GameObject:
@@ -351,3 +354,26 @@ PolygonCollider2D:
       - {x: 0.74, y: -4.45}
       - {x: 0.87, y: -4.43}
   m_UseDelaunayMesh: 0
+--- !u!114 &-7226645953024122173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4251680548070643432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c81fa24da674875bb6c38a7e08b195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  speed: 0
+  baseSpeed: 2
+  dashSpeed: 8
+  dashDuration: 0.3
+  dashing: 0
+  newPosition: {x: 0, y: 0}
+  mousePosG: {x: 0, y: 0, z: 0}
+  cooldownRate: 1
+  endLastDash: 0
+  cooldown: 0

@@ -1,4 +1,5 @@
 // written by sarah ahmed
+using System.Collections;
 using UnityEngine;
 
 public class PinBehavior : MonoBehaviour
@@ -11,10 +12,12 @@ public class PinBehavior : MonoBehaviour
     public bool dashing;
     public Vector2 newPosition;
     public Vector3 mousePosG;
-    public float cooldownRate = 1.0f;
+    public static float cooldownRate = 1.0f;
     public float endLastDash;
-    public float cooldown = 0.0f;
+    public static float cooldown = 0.0f;
     Camera cam;
+    public AudioSource[] audioSources;
+
    
 
     // Start is called before the first frame update
@@ -23,6 +26,7 @@ public class PinBehavior : MonoBehaviour
         cam = Camera.main;
         newPosition = transform.position;
          dashing = false;
+        audioSources = GetComponents<AudioSource>();
     if(Input.GetMouseButtonDown(0)) {
     
     }
@@ -31,10 +35,17 @@ public class PinBehavior : MonoBehaviour
         string collided = collision.gameObject.tag;
         Debug.Log("Collided with " + collided);
         if (collided == "Ball" || collided == "Wall") {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver"); 
+            StartCoroutine(WaitForSoundAndTransition());
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
     }
 
+    private IEnumerator WaitForSoundAndTransition()
+    {
+        audioSources[0].Play();
+        yield return new WaitForSeconds(audioSources[0].clip.length);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -64,6 +75,11 @@ public class PinBehavior : MonoBehaviour
                 dashing = true;
                 speed = dashSpeed;
                 start = Time.time;
+                if (audioSources[1].isPlaying)
+                {
+                    audioSources[1].Stop();
+                }
+                audioSources[1].Play();
             }
         }
     }

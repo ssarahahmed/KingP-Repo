@@ -9,7 +9,6 @@ public class DashIconBehavior : MonoBehaviour
     Image overlay;
     float cooldown;
     float cooldownRate;
-    public PinBehavior pin;
 
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,14 +21,14 @@ public class DashIconBehavior : MonoBehaviour
                 overlay = images[i];
             }
         }
-        cooldownRate = pin.cooldownRate;
+        cooldownRate = PinBehavior.cooldownRate;
         overlay.fillAmount = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        cooldown = pin.cooldown;
+        cooldown = PinBehavior.cooldown;
         string message = "";
         if(cooldown > 0.0){
             float fill = cooldown / cooldownRate;

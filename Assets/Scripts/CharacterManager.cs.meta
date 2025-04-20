@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 40ccf7f9222a54511bfbd2f79b4d9b79
+guid: 72bd74880040a4247a5272e5240bbfb9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - targetObject: {instanceID: 0}
+  - us: {instanceID: 0}
   - pinsDB: {fileID: 11400000, guid: 7a60dbcae074144378007af79e107d52, type: 2}
+  - sprite: {instanceID: 0}
+  - nameLabel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
